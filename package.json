@@ -3,9 +3,9 @@
   "description": "Testing Gatsby",
   "license": "MIT",
   "scripts": {
+    "start": "gatsby serve",
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve",
     "heroku-postbuild": "gatsby build"
   },
   "dependencies": {
