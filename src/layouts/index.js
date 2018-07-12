@@ -11,7 +11,7 @@ export default ({ children, data }) => (
       </h3>
     </Link>
     <Link to={`/about/`}>
-      About
+      Sobre mí
     </Link>
     {children()}
   </div>

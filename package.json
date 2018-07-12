@@ -1,11 +1,10 @@
 {
-  "name": "testing-gatsby",
-  "description": "Testing Gatsby",
+  "name": "emilio-ponce",
+  "description": "Emilio Ponce",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build",
-    "heroku-postbuild": "gatsby build"
+    "build": "gatsby build"
   },
   "dependencies": {
     "gatsby": "^1.9.250",
