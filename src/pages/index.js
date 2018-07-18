@@ -1,11 +1,12 @@
 import React from "react";
 import Link from "gatsby-link";
+import styles from "./index.module.css";
 
 export default ({ data }) => {
   return (
     <div style={{ margin: "3rem auto", maxWidth: 1024 }}>
       <h1>Emilio Ponce</h1>
-      <h2>Mantenlo simple</h2>
+      <h2>' Mantenlo simple '</h2>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <Link to={node.fields.slug}>
