@@ -3,7 +3,7 @@ title: "Publicar un buen contenido"
 date: "2018-07-19"
 ---
 
-![alt text](https://images.unsplash.com/photo-1504257365157-1496a50d48f2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cd9045b6436e90624f908f6ede529f97&auto=format&fit=crop&w=460&q=80)
+![alt text](https://images.unsplash.com/photo-1504257365157-1496a50d48f2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cd9045b6436e90624f908f6ede529f97&auto=format&fit=crop&w=310&q=80)
 
 _Créditos: Samuel Zeller en Unsplash._
 
