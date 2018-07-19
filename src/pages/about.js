@@ -5,7 +5,7 @@ export default ({ data }) => (
     <h1>Sobre mí</h1>
     <p>
       Soy Ingeniero Informático y dedico mucho tiempo a desarrollar aplicaciones
-      web. También gestiono un equipo, e incluso de de vez en cuando comienzo un
+      web. También gestiono un equipo, e incluso de vez en cuando comienzo un
       Pet Project y no lo acabo.
     </p>
     <p>
