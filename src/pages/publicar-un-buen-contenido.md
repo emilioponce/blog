@@ -9,9 +9,9 @@ _Créditos: Samuel Zeller en Unsplash._
 
 Veamos, qué hace falta para publicar un buen contenido?
 
-La descripción que [Martí](https://www.youtube.com/user/CdeCiencia) hizo hace unas semanas en uno de sus vídeos me parece bastante ajustada a lo que hoy en día entendemos como un buen contenido. El buen generador de contenido siempre cumple 3 requisitos: **calidad, constancia y originalidad.**
+La descripción que [Martí](https://www.youtube.com/user/CdeCiencia) hizo hace unas semanas en uno de sus vídeos se ajusta bastante a lo que hoy en día entendemos como un buen contenido. El buen generador de contenidos siempre cumple 3 requisitos: **calidad, constancia y originalidad.**
 
-En el contexto de un blog técnico como éste, entiendo que la calidad es probablemente el objetivo más ambicioso de los tres. Ésta no es más que una valoración subjetiva de los lectores, es decir, cuando un conjunto de lectores coinciden en que una fuente es de calidad, suele ser así. Publicar artículos con esta característica es por lo tanto un reto para mí, y seréis vosotros los que decidáis si son lo suficientemente buenos como para volver por aquí.
+En el contexto de un blog técnico como éste, entiendo que la calidad es probablemente el objetivo más ambicioso de los tres. Ésta no es más que una valoración subjetiva de los lectores, es decir, cuando un conjunto de lectores coinciden en que una fuente es de calidad, suele ser así. Publicar artículos con esta característica es por lo tanto un reto para mí, y seréis vosotros los que decidáis si son lo suficientemente buenos como para volver a pasar por aquí.
 
 La constancia acostumbra a ser cuestión de tesón y eso no es algo que en principio se me dé especialmente mal. Respecto a la originalidad, pretendo que en mi caso venga dada por un enfoque más humano o psicológico de este tipo de contenidos. Estamos acostumbrados a seguir manuales, a cumplir instrucciones. Seguro que acierto si os digo que para leer largos HOW-TO's o analizar pruebas de concepto existen mejores fuentes y por lo tanto no hace falta que vengáis a verme.
 
