@@ -25,6 +25,13 @@ module.exports = {
       options: {
         fonts: [`Quattrocento Sans`, `Work Sans`]
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-122688913-1",
+        head: false
+      }
     }
   ]
 };
