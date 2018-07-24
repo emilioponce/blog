@@ -3,10 +3,6 @@ title: "Publicar un buen contenido"
 date: "2018-07-19"
 ---
 
-![alt text](https://images.unsplash.com/photo-1504257365157-1496a50d48f2?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cd9045b6436e90624f908f6ede529f97&auto=format&fit=crop&w=310&q=80)
-
-_Créditos: Samuel Zeller en Unsplash._
-
 Veamos, qué hace falta para publicar un buen contenido?
 
 La descripción que [Martí](https://www.youtube.com/user/CdeCiencia) hizo hace unas semanas en uno de sus vídeos se ajusta bastante a lo que hoy en día entendemos como un buen contenido. El buen generador de contenidos siempre cumple 3 requisitos: **calidad, constancia y originalidad.**

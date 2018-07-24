@@ -6,7 +6,7 @@ export default ({ children, data }) => (
     <Link to={`/`}>
       <h3>Inicio</h3>
     </Link>
-    <Link to={`/about/`}>Sobre mí</Link>
+    <Link to={`/sobre-mi/`}>Sobre mí</Link>
     {children()}
   </div>
 );
