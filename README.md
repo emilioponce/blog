@@ -2,7 +2,7 @@
 
 Blog personal de Emilio Ponce
 
-https://emilio-ponce.netlify.com/
+https://emilio-ponce.netlify.com
 
 ## Stack
 
