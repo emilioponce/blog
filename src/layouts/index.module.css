@@ -1,8 +1,9 @@
 body {
   color: hsla(0, 0%, 0%, 0.8);
   font-family: "Quattrocento Sans", sans-serif;
-  font-weight: 400;
-  font-size: 125%;
+  font-weight: 300;
+  font-size: 120%;
+  line-height: 26px;
 }
 
 h2 {
@@ -34,4 +35,25 @@ li {
 em {
   color: #cccccc;
   font-size: 85%;
+}
+
+blockquote {
+  font-size: 120%;
+  font-style: italic;
+  background: #ede5f5;
+  border-left: 10px solid #ba8fe9;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+blockquote:before {
+  color: #ba8fe9;
+  content: open-quote;
+  font-size: 250%;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.2em;
+}
+blockquote p {
+  display: inline;
 }

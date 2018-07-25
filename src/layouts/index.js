@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import styles from "./index.module.css";
 
 export default ({ children, data }) => (
   <div>

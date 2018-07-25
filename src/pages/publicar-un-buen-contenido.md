@@ -1,6 +1,7 @@
 ---
 title: "Publicar un buen contenido"
 date: "2018-07-19"
+tags: ["reflexiones"]
 ---
 
 Veamos, qué hace falta para publicar un buen contenido?

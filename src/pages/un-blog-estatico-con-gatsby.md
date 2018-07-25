@@ -1,6 +1,7 @@
 ---
 title: "Un blog estático con Gatsby"
 date: "2018-07-12"
+tags: ["gatsby"]
 ---
 
 Aquí va un primer texto con el que validar que, efectivamente, ya puedo comenzar.
