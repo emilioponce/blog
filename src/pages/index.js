@@ -1,24 +1,34 @@
-import React from "react";
-import Link from "gatsby-link";
+import React from 'react'
+import Link from 'gatsby-link'
 
 export default ({ data }) => {
   return (
-    <div style={{ margin: "3rem auto", maxWidth: 1024 }}>
-      <h1>Emilio Ponce</h1>
-      <h2>' Mantenlo simple '</h2>
+    <div style={{ margin: '3rem auto', maxWidth: 1024 }}>
+      <div style={{ marginBottom: '40px' }}>
+        <Link to={`/sobre-mi/`}>Sobre mí</Link>
+      </div>
       {data.allMarkdownRemark.edges.map(({ node }) => (
         <div key={node.id}>
           <Link to={node.fields.slug}>
             <h3>
-              {node.frontmatter.title} — {node.frontmatter.date}
+              {node.frontmatter.title}
+              {'  '}
+              <div
+                style={{
+                  fontSize: '60%',
+                  color: '#757575'
+                }}
+              >
+                {node.frontmatter.date}
+              </div>
             </h3>
           </Link>
           <p>{node.excerpt}</p>
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query IndexQuery {
@@ -39,4 +49,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`

@@ -1,6 +1,6 @@
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: 'Quattrocento Sans', sans-serif;
   font-weight: 300;
   font-size: 120%;
   line-height: 26px;
@@ -8,50 +8,41 @@ body {
 
 h1 {
   line-height: 40px;
+  margin-bottom: 3px;
 }
 
-h2 {
-  font-family: "Work Sans", sans-serif;
-  color: #8d68b1;
-  font-size: 100%;
-  font-style: oblique;
-  margin-bottom: 50px;
+h3 {
+  margin-bottom: -20px;
 }
-
 a {
   color: inherit;
   text-decoration: none;
   transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-bottom: 1px solid #e0d6eb;
-  box-shadow: inset 0 -2px 0px 0px #e0d6eb;
+  border-bottom: 1px solid #97dbd9;
+  box-shadow: inset 0 -2px 0px 0px #97dbd9;
   font-weight: bold;
 }
 
 a:hover {
-  box-shadow: inset 0 0 0 1px #e0d6eb;
-  background-color: #e0d6eb;
+  box-shadow: inset 0 0 0 1px #97dbd9;
+  background-color: #97dbd9;
 }
 
 li {
   margin: 10px 0;
 }
 
-em {
-  color: #cccccc;
-  font-size: 85%;
-}
-
 blockquote {
   font-size: 120%;
   font-style: italic;
-  background: #ede5f5;
-  border-left: 10px solid #ba8fe9;
+  background: #baeceb;
+  border-left: 10px solid #2ba9a5;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
-  quotes: "\201C" "\201D" "\2018" "\2019";
+  quotes: '\201C' '\201D' '\2018' '\2019';
 }
 blockquote:before {
-  color: #ba8fe9;
+  color: #2ba9a5;
   content: open-quote;
   font-size: 250%;
   line-height: 0.1em;

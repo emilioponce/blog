@@ -7,7 +7,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `src`,
-        path: `${__dirname}/src/`
+        path: `${__dirname}/src/posts/`
       }
     },
     {
@@ -20,6 +20,7 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
@@ -29,9 +30,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-122688913-1",
+        trackingId: 'UA-122688913-1',
         head: false
       }
     }
   ]
-};
+}

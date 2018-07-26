@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react'
+import Helmet from 'react-helmet'
 
 export default ({ data }) => (
-  <div style={{ margin: "3rem auto", maxWidth: 1024 }}>
+  <div style={{ margin: '3rem auto', maxWidth: 1024 }}>
+    <Helmet title="Sobre mí" />
     <h1>Sobre mí</h1>
     <p>
       Soy Ingeniero Informático y dedico mucho tiempo a desarrollar aplicaciones
@@ -24,7 +26,7 @@ export default ({ data }) => (
       </li>
     </ul>
   </div>
-);
+)
 
 export const query = graphql`
   query AboutQuery {
@@ -34,4 +36,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`
