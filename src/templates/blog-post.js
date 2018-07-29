@@ -4,7 +4,9 @@ import Helmet from 'react-helmet'
 
 export default ({ data }) => {
   return (
-    <div style={{ margin: '3rem auto', maxWidth: 1024 }}>
+    <div
+      style={{ margin: '3rem auto', maxWidth: 1024, padding: '0 10px 0 10px' }}
+    >
       <Helmet title={data.postData.frontmatter.title} />
       <h1>
         {data.postData.frontmatter.title}{' '}

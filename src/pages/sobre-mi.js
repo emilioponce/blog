@@ -2,7 +2,9 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 export default ({ data }) => (
-  <div style={{ margin: '3rem auto', maxWidth: 1024 }}>
+  <div
+    style={{ margin: '3rem auto', maxWidth: 1024, padding: '0 10px 0 10px' }}
+  >
     <Helmet title="Sobre mí" />
     <h1>Sobre mí</h1>
     <p>

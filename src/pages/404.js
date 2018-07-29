@@ -3,7 +3,9 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 
 const NotFoundPage = () => (
-  <div style={{ margin: '3rem auto', maxWidth: 1024 }}>
+  <div
+    style={{ margin: '3rem auto', maxWidth: 1024, padding: '0 10px 0 10px' }}
+  >
     <Helmet title="Página no encontrada" />
     <h1>Página no encontrada</h1>
     <img src="@TODO poner imagen" />

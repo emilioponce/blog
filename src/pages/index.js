@@ -3,7 +3,13 @@ import Link from 'gatsby-link'
 
 export default ({ data }) => {
   return (
-    <div style={{ margin: '3rem auto', maxWidth: 1024 }}>
+    <div
+      style={{
+        margin: '3rem auto',
+        maxWidth: 1024,
+        padding: '0 10px 0 10px'
+      }}
+    >
       <div style={{ marginBottom: '40px' }}>
         <Link to={`/sobre-mi/`}>Sobre mí</Link>
       </div>
