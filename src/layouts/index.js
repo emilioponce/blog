@@ -14,7 +14,7 @@ export default ({ children, data }) => (
         {
           name: 'keywords',
           content:
-            'SCRUM, react, nodejs, desarrollo, agile, software, javascript'
+            'SCRUM, Kanban, react, nodejs, gatsbyjs, jamstack, SQL, postgresql, nosql, desarrollo, agile, software, javascript, java, spring, patrones de software'
         }
       ]}
     />
