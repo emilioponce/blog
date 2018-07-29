@@ -1,16 +1,16 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-export default ({ data }) => (
+const SobreMi = () => (
   <div
     style={{ margin: '3rem auto', maxWidth: 1024, padding: '0 10px 0 10px' }}
   >
     <Helmet title="Sobre mí" />
     <h1>Sobre mí</h1>
     <p>
-      Soy Ingeniero Informático y dedico mucho tiempo a desarrollar aplicaciones
-      web. También gestiono un equipo, e incluso de vez en cuando comienzo un
-      Pet Project y no lo acabo.
+      Soy Ingeniero Informático y dedico gran parte de mi tiempo a desarrollar
+      aplicaciones web. También gestiono un equipo, e incluso de vez en cuando
+      comienzo un <i>Pet Project</i> y no lo acabo.
     </p>
     <p>
       Siento curiosidad por el aspecto técnico y humano de las cosas, sabrás
@@ -30,12 +30,4 @@ export default ({ data }) => (
   </div>
 )
 
-export const query = graphql`
-  query AboutQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
+export default SobreMi
