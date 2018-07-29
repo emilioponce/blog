@@ -21,7 +21,7 @@ export default ({ data }) => {
               {'  '}
               <div
                 style={{
-                  fontSize: '60%',
+                  fontSize: '65%',
                   color: '#757575'
                 }}
               >

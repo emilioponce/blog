@@ -12,7 +12,7 @@ export default ({ data }) => {
         {data.postData.frontmatter.title}{' '}
         <div
           style={{
-            fontSize: '40%',
+            fontSize: '45%',
             color: '#757575'
           }}
         >
