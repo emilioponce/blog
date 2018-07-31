@@ -7,7 +7,7 @@ export default ({ data }) => {
     <div
       style={{ margin: '3rem auto', maxWidth: 1024, padding: '0 10px 0 10px' }}
     >
-      <Helmet title={data.postData.frontmatter.title} />
+      <Helmet title={'Blog | '.concat(data.postData.frontmatter.title)} />
       <h1>
         {data.postData.frontmatter.title}{' '}
         <div
@@ -26,7 +26,7 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query BlogPostQuery($slug: String!) {
+  query BlogPostQuery($slug: String) {
     postData: markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {

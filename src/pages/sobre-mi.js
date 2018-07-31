@@ -5,7 +5,7 @@ const SobreMi = () => (
   <div
     style={{ margin: '3rem auto', maxWidth: 1024, padding: '0 10px 0 10px' }}
   >
-    <Helmet title="Sobre mí" />
+    <Helmet title="Blog | Sobre mí" />
     <h1>Sobre mí</h1>
     <p>
       Soy Ingeniero Informático y dedico gran parte de mi tiempo a desarrollar
