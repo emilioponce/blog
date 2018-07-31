@@ -19,21 +19,21 @@ Además, hay una serie de **situaciones que, si se diesen, conviene detectar y c
 
 - Varios miembros se enzarzan en cuestiones técnicas que requieren un tiempo de estudio, sin tener en cuenta que es difícil encontrar una solución rápida a las 9 de la mañana.
 
-- Un miembro del equipo es poco conciso y se extiende hasta la aberración:
+- Un miembro del equipo es poco conciso y se extiende demasiado:
 
   > Esta tarea empezó cuando Anaximandro le hizo una Pull Request a Diplodocus, este puso huevos, y entonces...
 
-- Secuestro de la reunión para comentar temas no directamente relacionados con el sprint.
+- Secuestro inconsciente de la reunión para comentar temas no directamente relacionados con las tareas planteadas en el sprint.
 
-- Un miembro del equipo muestra cierta apatía o dificultades para comunicarse:
+- Un miembro del equipo muestra dificultades para comunicarse:
 
   > Uhm.. a ver, ayer no recuerdo lo que hice. Hoy creo que haré esa de ahí.. ehhh... Siguiente!
 
-- Falta de acuerdo respecto a como se plantean problemas o soluciones complejas:
+- Falta de acuerdo respecto a como se plantean globalmente problemas o soluciones complejas:
 
-  > Según la escuela Aristotélica del Software, el principio que aplicas en tu patrón genera problemas en la tercera capa poliédrica que impide refactorizar el código tal y como planteas.
+  > Según la escuela Aristotélica del Software, el principio que aplicas en tu patrón genera problemas en la tercera capa y esto impide refactorizar ...
 
-Es aquí donde en nuestro caso el **Scrum Master actúa como moderador**, recordando que se está excediendo el tiempo o redirigiendo el cauce, por ejemplo emplazando a tratar ese tipo de cuestiones más tarde en una reunión monográfica. En cualquier caso no hay que perder de vista que el Scrum Master no es un ser omnipotente, plantear correctamente una Daily es un compromiso de todo el equipo. Cada uno de los miembros es responsable de sacar lo mejor de sí mismo durante su turno de palabra.
+Es aquí donde en nuestro caso el **Scrum Master actúa como moderador**, por ejemplo recordando que se está excediendo el tiempo o redirigiendo el cauce, emplazando a tratar ese tipo de cuestiones más tarde en una reunión monográfica etc. Considero normal que sobretodo cuando un equipo añade las Dailies a su día a dia por primera vez alguna de estas situaciones pueda darse, educarse en las Dailies no es cosa de 1 día, y en nuestro caso es trabajo del Scrum Master recordar a todos los participantes el objetivo concreto de estas reuniones. En cualquier caso no hay que perder de vista que el Scrum Master no es un ser omnipotente, plantear correctamente una Daily es un compromiso de todo el equipo, por lo que cada uno de los miembros es responsable de sacar lo mejor de sí mismo durante su turno de palabra.
 
 Antes de acabar, un par de detalles que suelen generar preguntas:
 
