@@ -40,6 +40,7 @@ Es aquí donde en nuestro caso el **Scrum Master actúa como moderador**, record
 Antes de acabar, un par de detalles que suelen generar preguntas:
 
 1.  En las Dailies no actualizamos las [estimaciones](http://www.javiergarzas.com/2014/01/estimacion-agil-scrum.html) de las Historias de Usuario.
+
 2.  La reunión tiene lugar aunque alguno de los miembros no pueda venir. Sólo nos las saltamos de manera puntual y en situaciones concretas.
 
 En resumen, en nuestro caso **las Dailies funcionan**, y os las recomiendo sobretodo cuando tratéis con equipos medianos o grandes. Obviamente no todos los días son igual de productivas ni duran exactamente 15 minutos, siempre hay aspectos que mejorar, pero aun así **el cómputo global es claramente positivo**.
