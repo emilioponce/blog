@@ -6,7 +6,7 @@ tags: ["agile", "SCRUM"]
 
 _Para ponerte en antecedentes consulta el artículo previo: [Las Daily Meetings](/las-daily-meetings/)._
 
-Si repasamos la teoría, veremos que en las Dailies cada miembro del equipo debe comentar principalmente 3 aspectos: "Qué hice ayer", "Qué haré hoy", y "Qué me está bloqueando". **Estos comentarios acostumbran a dar pie a otros tantos también muy útiles, como por ejemplo:**
+Si repasamos la teoría, veremos que en las Dailies cada miembro del equipo debe comentar principalmente 3 aspectos: "Qué hice ayer", "Qué haré hoy" y "Qué me está bloqueando". **Estos comentarios acostumbran a dar pie a otros tantos también muy útiles, como por ejemplo:**
 
 - Ep, sospecho que esto que estoy haciendo podría afectar a lo que estás haciendo tú, mejor te lo explico luego y nos ponemos de acuerdo.
 - Ep, deberíamos crear estas tareas con las que no contábamos, lo hacemos luego, ok?
