@@ -27,7 +27,7 @@ Además, hay una serie de **situaciones que, si se diesen, conviene detectar y c
 
 - Un miembro del equipo muestra dificultades para comunicarse:
 
-  > Uhm.. a ver, ayer no recuerdo lo que hice. Hoy creo que haré esa de ahí.. ehhh... Siguiente!
+  > Uhm.. a ver, no recuerdo lo que hice ayer. Hoy creo que haré esa de ahí.. ehhh... Siguiente!
 
 - Falta de acuerdo respecto a como se plantean globalmente problemas o soluciones complejas:
 
