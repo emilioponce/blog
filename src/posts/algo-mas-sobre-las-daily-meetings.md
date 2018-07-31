@@ -15,7 +15,7 @@ Si repasamos la teoría, veremos que en las Dailies cada miembro del equipo debe
 - Ep, necesito ayuda con este tema, no consigo sacarlo. Invoco al todopoderoso [Pair Programming](https://es.wikipedia.org/wiki/Programaci%C3%B3n_en_pareja), o en su defecto a alguien que pueda darle otro enfoque al asunto.
 - Ep, me he encontrado con este detalle que no está bien definido. Toca hablar con el Product Owner y aclararlo.
 
-Además, hay una serie de **situaciones que si se dan conviene detectar y corregir** cuanto antes:
+Además, hay una serie de **situaciones que, si se diesen, conviene detectar y corregir** cuanto antes:
 
 - Varios miembros se enzarzan en cuestiones técnicas que requieren un tiempo de estudio, sin tener en cuenta que es difícil encontrar una solución rápida a las 9 de la mañana.
 
@@ -23,9 +23,7 @@ Además, hay una serie de **situaciones que si se dan conviene detectar y correg
 
   > Esta tarea empezó cuando Anaximandro le hizo una Pull Request a Diplodocus, este puso huevos, y entonces...
 
-- Secuestro de la reunión para hablar de otros temas:
-
-  > Buff visteis el partido anoche? increíble Serresiete!!!
+- Secuestro de la reunión para comentar temas no directamente relacionados con el sprint.
 
 - Un miembro del equipo muestra cierta apatía o dificultades para comunicarse:
 
