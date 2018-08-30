@@ -1,16 +1,18 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
-import { Link, graphql } from 'gatsby'
+import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
+import { graphql } from 'gatsby'
+import Layout from '../components/layout'
 
-export default ({ data }) => {
-  return (
+export default ({ data }) => (
+  <Layout>
     <div
       style={{ margin: '3rem auto', maxWidth: 1024, padding: '0 10px 0 10px' }}
     >
       <Helmet title="Página no encontrada" />
       <h1>404 Página no encontrada</h1>
-      <Img sizes={data.image404.sizes} />
+      <Img fluid={data.file.childImageSharp.fluid} />
       <h2>
         Esta ruta no existe, por favor comprueba que has escrito correctamente
         la URL.
@@ -21,14 +23,16 @@ export default ({ data }) => {
         <a href="http://www.twitter.com/soycore">Twitter</a>.
       </p>
     </div>
-  )
-}
+  </Layout>
+)
 
 export const query = graphql`
-  query image404 {
-    image404: imageSharp(id: { regex: "/404/" }) {
-      fluid(maxWidth: 1024) {
-        ...GatsbyImageSharpFluid
+  query {
+    file(relativePath: { regex: "/404/" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid_noBase64
+        }
       }
     }
   }
