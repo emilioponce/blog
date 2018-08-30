@@ -10,7 +10,7 @@
     "gatsby": "next",
     "gatsby-image": "next",
     "gatsby-plugin-google-analytics": "next",
-    "gatsby-plugin-google-fonts": "next",
+    "gatsby-plugin-google-fonts": "0.0.4",
     "gatsby-plugin-react-helmet": "next",
     "gatsby-plugin-sharp": "next",
     "gatsby-source-filesystem": "next",
@@ -19,6 +19,10 @@
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-helmet": "^5.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emilioponce/blog.git"
   },
   "keywords": [
     "gatsby "
