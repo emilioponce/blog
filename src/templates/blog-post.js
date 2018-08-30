@@ -1,6 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import Helmet from 'react-helmet'
+import graphql from 'gatsby'
 
 export default ({ data }) => {
   return (
@@ -35,8 +36,8 @@ export const query = graphql`
       }
     }
     postImage: imageSharp(id: { regex: $slug }) {
-      sizes(maxWidth: 1024) {
-        ...GatsbyImageSharpSizes
+      fluid(maxWidth: 1024) {
+        ...GatsbyImageSharpFluid
       }
     }
   }

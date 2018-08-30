@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 import Img from 'gatsby-image'
+import { Link, graphql } from 'gatsby'
 
 export default ({ data }) => {
   return (
@@ -27,8 +27,8 @@ export default ({ data }) => {
 export const query = graphql`
   query image404 {
     image404: imageSharp(id: { regex: "/404/" }) {
-      sizes(maxWidth: 1024) {
-        ...GatsbyImageSharpSizes
+      fluid(maxWidth: 1024) {
+        ...GatsbyImageSharpFluid
       }
     }
   }

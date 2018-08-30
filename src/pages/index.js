@@ -1,38 +1,41 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { graphql, Link } from 'gatsby'
+import Layout from '../components/layout'
 
 export default ({ data }) => {
   return (
-    <div
-      style={{
-        margin: '3rem auto',
-        maxWidth: 1024,
-        padding: '0 10px 0 10px'
-      }}
-    >
-      <div style={{ marginBottom: '40px' }}>
-        <Link to={`/sobre-mi/`}>Sobre mí</Link>
-      </div>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div key={node.id}>
-          <Link to={node.fields.slug}>
-            <h3>
-              {node.frontmatter.title}
-              {'  '}
-              <div
-                style={{
-                  fontSize: '65%',
-                  color: '#757575'
-                }}
-              >
-                {node.frontmatter.date}
-              </div>
-            </h3>
-          </Link>
-          <p>{node.excerpt}</p>
+    <Layout>
+      <div
+        style={{
+          margin: '3rem auto',
+          maxWidth: 1024,
+          padding: '0 10px 0 10px'
+        }}
+      >
+        <div style={{ marginBottom: '40px' }}>
+          <Link to={`/sobre-mi/`}>Sobre mí</Link>
         </div>
-      ))}
-    </div>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <div key={node.id}>
+            <Link to={node.fields.slug}>
+              <h3>
+                {node.frontmatter.title}
+                {'  '}
+                <div
+                  style={{
+                    fontSize: '65%',
+                    color: '#757575'
+                  }}
+                >
+                  {node.frontmatter.date}
+                </div>
+              </h3>
+            </Link>
+            <p>{node.excerpt}</p>
+          </div>
+        ))}
+      </div>
+    </Layout>
   )
 }
 
