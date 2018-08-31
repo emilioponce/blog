@@ -5,8 +5,6 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
 export default ({ data }) => {
-  console.log(data)
-
   return (
     <Layout>
       <div
@@ -37,7 +35,7 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query($slug: String) {
+  query($slug: String, $mainImage: String) {
     postData: markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
@@ -45,7 +43,7 @@ export const query = graphql`
         date(formatString: "DD MMMM YYYY", locale: "es")
       }
     }
-    postImage: file(relativePath: { regex: "/404/" }) {
+    postImage: file(relativePath: { eq: $mainImage }) {
       childImageSharp {
         fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid_noBase64
