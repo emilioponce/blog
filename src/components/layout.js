@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Header from '../components/header'
+import favicon from '../images/favicon.png'
 import { StaticQuery, graphql } from 'gatsby'
 
 import './layout.module.css'
@@ -27,6 +28,9 @@ export default ({ children }) => (
               content:
                 'SCRUM, Kanban, react, nodejs, gatsbyjs, jamstack, SQL, postgresql, nosql, desarrollo, agile, software, javascript, java, spring, patrones de software'
             }
+          ]}
+          link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
           ]}
         />
         <Header siteTitle={'Blog | '.concat(data.site.siteMetadata.title)} />
