@@ -15,8 +15,8 @@ const SobreMi = () => (
         comienzo un <i>Pet Project</i> y no lo acabo.
       </p>
       <p>
-        Toco la batería, y en general siento curiosidad por el aspecto técnico y
-        humano de aquello en lo que me sumerjo. Sabrás algo más sobre mí en:
+        Siento curiosidad por el aspecto técnico y humano de todo aquello en lo
+        que me sumerjo. Sabrás algo más sobre mí en:
       </p>
       <ul>
         <li>
