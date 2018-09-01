@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Emilio Ponce`
+    title: `Emilio Ponce`,
+    description: `Blog personal de Emilio Ponce`,
+    siteUrl: `http://emilioponce.info`
   },
   plugins: [
     {
@@ -16,6 +18,9 @@ module.exports = {
         name: `img`,
         path: `${__dirname}/src/images/`
       }
+    },
+    {
+      resolve: `gatsby-plugin-feed`
     },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
