@@ -27,7 +27,6 @@ export default ({ data }) => {
           </div>
         </h1>
         <Img fluid={data.postImage.childImageSharp.fluid} />
-
         <div dangerouslySetInnerHTML={{ __html: data.postData.html }} />
       </div>
     </Layout>

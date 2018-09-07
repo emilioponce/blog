@@ -1,6 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
 export default ({ data }) => (
@@ -10,7 +11,11 @@ export default ({ data }) => (
     >
       <Helmet title="Blog | Sobre mí" />
       <h1>Sobre mí</h1>
-      <div style={{ float: 'left', padding: '0 0 0 10px' }}>
+      <div
+        style={{
+          padding: '20px 0 10px 0'
+        }}
+      >
         <Img
           resolutions={data.file.childImageSharp.resolutions}
           style={{ borderRadius: '50%' }}
@@ -52,7 +57,7 @@ export const query = graphql`
   query {
     file(relativePath: { regex: "/avatar/" }) {
       childImageSharp {
-        resolutions(width: 300, height: 300) {
+        resolutions(width: 250, height: 250) {
           ...GatsbyImageSharpResolutions
         }
       }
