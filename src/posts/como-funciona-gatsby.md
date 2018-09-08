@@ -69,7 +69,7 @@ Que Gatsby sea estático tiene más implicaciones positivas:
 - Dispone de una buena y bien mantenida documentación
 - El site generado es directamente una PWA
 - Dispone de un cada vez más extenso ecosistema de plugins, siendo parte de ellos contribuciones de la comunidad de desarrolladores
-- Si trabajas con Markdown, existen productos relacionados con los que editar estos contenidos mediante un editor WYSIWYG
+- Si defines contenidos con markdown, existen productos relacionados con los que editar estos contenidos mediante un editor WYSIWYG
 - Nunca verás tanto verde auditando con Lighthouse o [PageSpeed Insights](https://developers.google.com/speed/pagespeed/insights/) :)
 
 Como con tanta ventaja empiezo ya a parecer un comercial, también **os comento algunos problemas con los que me he encontrado:**
