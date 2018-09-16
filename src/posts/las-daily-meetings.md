@@ -1,10 +1,10 @@
 ---
-title: "Las Daily Meetings"
-date: "2018-07-30"
-tags: ["agile", "SCRUM"]
+title: 'Las Daily Meetings'
+date: '2018-07-30'
+tags: ['agile', 'SCRUM']
 ---
 
-_⇨ Me apetece comentar bastantes cosas sobre como enfocamos en mi empresa las Daily Meetings así que he decidido hacerlo en dos textos consecutivos, por si alguno tiene la tentación de esperarse al DVD._
+_Me apetece comentar bastantes cosas sobre como enfocamos en mi empresa las Daily Meetings así que he decidido hacerlo en dos textos consecutivos, por si alguno tiene la tentación de esperarse al DVD._
 
 La reunión diaria de SCRUM es una apuesta sobre seguro, una de esas herramientas que aplicas sabiendo que nadie en el equipo va a dudar sobre su utilidad. Habrás oído referirse a ella como "Daily Meeting", "Stand-Up Meeting", incluso “Walk the Wall Meeting"... Tiene muchos nombres, pero en mi empresa no sin cierto cariño abreviamos y la llamamos "la Daily". A continuación os explicaré nuestra experiencia, las Dailies tal y como nosotros las aplicamos, porque recordemos: [SCRUM no es una metodología](/scrum-no-es-una-metodologia/).
 

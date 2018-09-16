@@ -33,7 +33,7 @@ export default ({ children }) => (
             { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
           ]}
         />
-        <Header siteTitle={'Blog | '.concat(data.site.siteMetadata.title)} />
+        <Header siteTitle={data.site.siteMetadata.title} />
         {children}
       </>
     )}
