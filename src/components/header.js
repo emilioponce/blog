@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { Avatar } from 'antd'
+import 'antd/lib/avatar/style/css'
 
 const Header = ({ siteTitle }) => (
   <div
@@ -9,23 +11,37 @@ const Header = ({ siteTitle }) => (
   >
     <div
       style={{
-        margin: '0 auto',
-        maxWidth: 1024,
-        padding: '10px 0px 10px 10px'
+        padding: '10px 10px 0px 10px'
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
+      <Link
+        to="/"
+        style={{
+          color: 'white',
+          borderBottom: 'none',
+          boxShadow: 'none'
+        }}
+      >
+        <Avatar
+          size={48}
           style={{
-            color: 'white',
-            borderBottom: 'none',
-            boxShadow: 'none'
+            backgroundColor: '#87d068',
+            display: 'inline-block',
+            marginBottom: '10px',
+            marginRight: '10px'
+          }}
+          icon="user"
+        />
+        <span
+          style={{
+            fontSize: '40px',
+            position: 'absolute',
+            marginTop: '12px'
           }}
         >
           {siteTitle}
-        </Link>
-      </h1>
+        </span>
+      </Link>
     </div>
   </div>
 )

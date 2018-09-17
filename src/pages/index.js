@@ -13,50 +13,59 @@ export default ({ data }) => {
           padding: '0 10px 0 10px'
         }}
       >
-        <div>
+        <div style={{ paddingBottom: '20px' }}>
           <Link to={`/sobre-mi/`}>Sobre mí</Link>
         </div>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div
             key={node.id}
             style={{
-              padding: '0 0 1px 0'
+              paddingBottom: '1px'
             }}
           >
-            <Link to={node.fields.slug}>
+            <Link
+              to={node.fields.slug}
+              style={{
+                borderBottom: 'none',
+                boxShadow: 'none',
+                fontWeight: 'normal'
+              }}
+            >
               <h2>{node.frontmatter.title}</h2>
-            </Link>
-            <div
-              style={{
-                fontSize: '80%',
-                color: '#9c9c9c',
-                display: 'inline'
-              }}
-            >
-              {node.frontmatter.date}
-            </div>
-            <div
-              style={{
-                fontSize: '80%',
-                color: '#9c9c9c',
-                display: 'inline',
-                marginLeft: '10px'
-              }}
-            >
+
+              <span
+                style={{
+                  fontSize: '80%',
+                  color: '#9c9c9c',
+                  textDecoration: 'none'
+                }}
+              >
+                {node.frontmatter.date}
+              </span>
+
               <Icon
                 type="eye"
+                theme="twoTone"
+                twoToneColor="#29BB9C"
                 style={{
-                  fontSize: '18px',
-                  color: '#29BB9C',
-                  marginTop: '10px'
+                  fontSize: '20px',
+                  marginLeft: '15px'
                 }}
               />
-              &nbsp;
-              {node.timeToRead}
-              &nbsp;minutos
-            </div>
 
-            <p>{node.excerpt}</p>
+              <span
+                style={{
+                  fontSize: '80%',
+                  color: '#9c9c9c'
+                }}
+              >
+                &nbsp;
+                {node.timeToRead}
+                &nbsp;
+                {node.timeToRead <= 1 ? 'minuto' : 'minutos'}
+              </span>
+              <p style={{ marginTop: '5px' }}>{node.excerpt}</p>
+            </Link>
           </div>
         ))}
       </div>
