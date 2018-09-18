@@ -38,7 +38,7 @@ const Header = ({ siteTitle, avatarUrl }) => (
           style={{
             fontSize: '35px',
             position: 'absolute',
-            marginTop: '2px'
+            marginTop: '3px'
           }}
         >
           {siteTitle}
