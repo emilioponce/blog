@@ -18,7 +18,7 @@ export default ({ data }) => (
       >
         <Img
           resolutions={data.file.childImageSharp.resolutions}
-          style={{ borderRadius: '50%' }}
+          style={{ borderRadius: '10%' }}
           title="Dime usted"
         />
       </div>

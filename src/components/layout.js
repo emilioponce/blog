@@ -15,6 +15,13 @@ export default ({ children }) => (
             title
           }
         }
+        file(relativePath: { regex: "/avatar_titulo/" }) {
+          childImageSharp {
+            resolutions(width: 250, height: 250) {
+              ...GatsbyImageSharpResolutions
+            }
+          }
+        }
       }
     `}
     render={data => (
@@ -33,7 +40,10 @@ export default ({ children }) => (
             { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
           ]}
         />
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          avatarUrl={data.file.childImageSharp.resolutions.src}
+        />
         {children}
       </>
     )}

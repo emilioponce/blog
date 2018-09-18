@@ -3,43 +3,49 @@ import { Link } from 'gatsby'
 import { Avatar } from 'antd'
 import 'antd/lib/avatar/style/css'
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, avatarUrl }) => (
   <div
     style={{
-      background: '#29BB9C'
+      background: '#29BB9C',
+      marginBottom: '1.45rem'
     }}
   >
     <div
       style={{
-        padding: '10px 10px 0px 10px'
+        margin: '0 auto',
+        maxWidth: 1024,
+        padding: '10px 10px 0 10px'
       }}
     >
+      <Avatar
+        size={50}
+        style={{
+          backgroundColor: '#1b846d',
+          display: 'inline-block',
+          marginBottom: '10px',
+          marginRight: '10px'
+        }}
+        src={avatarUrl}
+      />
+
       <Link
         to="/"
         style={{
-          color: 'white',
-          borderBottom: 'none',
-          boxShadow: 'none'
+          color: 'white'
         }}
       >
-        <Avatar
-          size={48}
-          style={{
-            backgroundColor: '#87d068',
-            display: 'inline-block',
-            marginBottom: '10px',
-            marginRight: '10px'
-          }}
-          icon="user"
-        />
         <span
           style={{
-            fontSize: '40px',
+            fontSize: '35px',
             position: 'absolute',
-            marginTop: '12px'
+            marginTop: '2px'
           }}
         >
           {siteTitle}
+
+          <div style={{ fontSize: '18px', marginLeft: '1px' }}>
+            Desarrollo web
+          </div>
         </span>
       </Link>
     </div>

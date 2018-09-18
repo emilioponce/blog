@@ -3,6 +3,7 @@ import Img from 'gatsby-image'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
+import { Icon } from 'antd'
 
 export default ({ data }) => {
   return (
@@ -15,18 +16,36 @@ export default ({ data }) => {
         }}
       >
         <Helmet title={'Blog | '.concat(data.postData.frontmatter.title)} />
-        <h1>
-          {data.postData.frontmatter.title}{' '}
-          <div
+        <h1>{data.postData.frontmatter.title} </h1>
+        <div
+          style={{
+            color: '#9c9c9c'
+          }}
+        >
+          {data.postData.frontmatter.date}
+          <Icon
+            type="eye"
+            theme="twoTone"
+            twoToneColor="#29BB9C"
             style={{
-              fontSize: '45%',
-              color: '#757575'
+              fontSize: '20px',
+              marginLeft: '15px'
+            }}
+          />
+          <span
+            style={{
+              color: '#9c9c9c'
             }}
           >
-            {data.postData.frontmatter.date}
-          </div>
-        </h1>
-        <Img fluid={data.postImage.childImageSharp.fluid} />
+            {' '}
+            {data.postData.timeToRead}{' '}
+            {data.postData.timeToRead <= 1 ? 'minuto' : 'minutos'}
+          </span>
+        </div>
+
+        <div style={{ padding: '10px 0 10px 0' }}>
+          <Img fluid={data.postImage.childImageSharp.fluid} />
+        </div>
         <div dangerouslySetInnerHTML={{ __html: data.postData.html }} />
       </div>
     </Layout>
@@ -41,6 +60,7 @@ export const query = graphql`
         title
         date(formatString: "DD MMMM YYYY", locale: "es")
       }
+      timeToRead
     }
     postImage: file(relativePath: { eq: $mainImage }) {
       childImageSharp {
