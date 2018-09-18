@@ -55,7 +55,7 @@ export default ({ data }) => (
 
 export const query = graphql`
   query {
-    file(relativePath: { regex: "/avatar/" }) {
+    file(relativePath: { regex: "/avatar.jpg/" }) {
       childImageSharp {
         resolutions(width: 250, height: 250) {
           ...GatsbyImageSharpResolutions
