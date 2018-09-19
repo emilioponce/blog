@@ -17,13 +17,20 @@ export default ({ data }) => {
           <Link to={`/sobre-mi/`}>Sobre mí</Link>
         </div>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div key={node.id} style={{ marginBottom: '25px' }}>
+          <div
+            key={node.id}
+            style={{
+              marginBottom: '20px',
+              backgroundColor: 'rgb(252, 252, 252)',
+              borderRadius: '8%'
+            }}
+          >
             <Link
               to={node.fields.slug}
               style={{
                 borderBottom: 'none',
                 boxShadow: 'none',
-                backgroundColor: 'white',
+                backgroundColor: 'rgb(252, 252, 252)',
                 fontWeight: 'normal'
               }}
             >
@@ -56,7 +63,7 @@ export default ({ data }) => {
                 {' '}
                 {node.timeToRead} {node.timeToRead <= 1 ? 'minuto' : 'minutos'}
               </span>
-              <p>{node.excerpt}</p>
+              <p style={{ marginBottom: '0px' }}>{node.excerpt}</p>
             </Link>
           </div>
         ))}

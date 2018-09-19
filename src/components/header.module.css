@@ -1,0 +1,46 @@
+.wrapper {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.mask {
+  margin-left: 15px;
+  max-width: 1024;
+  background-color: rgb(47, 204, 170);
+  width: 257px;
+  height: 60px;
+  z-index: 0;
+  -webkit-transform: skewX(-10deg);
+  -moz-transform: skewX(-10deg);
+  -o-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+  position: absolute;
+}
+
+.avatar {
+  display: inline-block;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+.text {
+  color: white;
+}
+
+.text:hover {
+  color: rgb(243, 243, 243);
+}
+
+.title {
+  font-size: 28px;
+  position: absolute;
+  margin-top: 7px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin-left: 2px;
+}

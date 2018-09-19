@@ -29,7 +29,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Quattrocento Sans`, `Work Sans`]
+        fonts: [`Quattrocento Sans`, `Montserrat`]
       }
     },
     {
