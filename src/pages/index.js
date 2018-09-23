@@ -13,6 +13,9 @@ export default ({ data }) => {
           padding: '0 10px 0 10px'
         }}
       >
+        <div style={{ paddingBottom: '20px' }}>
+          <Link to={`/sobre-mi/`}>Sobre mí</Link>
+        </div>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div
             key={node.id}
