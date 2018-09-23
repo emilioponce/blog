@@ -9,6 +9,7 @@ const Header = ({ siteTitle, avatarUrl }) => (
   <div
     style={{
       background: '#29BB9C',
+      height: '80px',
       boxShadow: '0 2px 4px 0 rgba(0,0,0,0.1)'
     }}
   >

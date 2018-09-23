@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
+import { Icon } from 'antd'
 
 export default ({ data }) => (
   <Layout>
@@ -32,22 +33,117 @@ export default ({ data }) => (
           Siento curiosidad por el aspecto técnico y humano de las cosas. Sabrás
           algo más sobre mí en:
         </p>
-        <ul>
-          <li>
-            <a href="https://twitter.com/soycore">Twitter</a>
-          </li>
-          <li>
-            <a href="https://github.com/emilioponce">Github</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/emilio-ponce-a319459/">
-              Linkedin
+        <div>
+          <span
+            style={{
+              display: 'inline',
+              float: 'left',
+              margin: '0px 30px',
+              textAlign: 'center'
+            }}
+          >
+            <a
+              href="https://twitter.com/soycore"
+              style={{
+                borderBottom: 'none',
+                boxShadow: 'none',
+                backgroundColor: 'white'
+              }}
+            >
+              <Icon
+                type="twitter"
+                style={{
+                  fontSize: '48px',
+                  color: '#2CAAE1'
+                }}
+              />
+              <div>Twitter</div>
             </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/user/ValenceBandSongs">Youtube</a>
-          </li>
-        </ul>
+          </span>
+
+          <span
+            style={{
+              display: 'inline',
+              float: 'left',
+              margin: '0px 30px',
+              textAlign: 'center'
+            }}
+          >
+            <a
+              href="https://github.com/emilioponce"
+              style={{
+                borderBottom: 'none',
+                boxShadow: 'none',
+                backgroundColor: 'white'
+              }}
+            >
+              <Icon
+                type="github"
+                style={{
+                  fontSize: '48px'
+                }}
+              />
+              <div>Github</div>
+            </a>
+          </span>
+
+          <span
+            style={{
+              display: 'inline',
+              float: 'left',
+              margin: '0px 30px',
+
+              textAlign: 'center'
+            }}
+          >
+            <a
+              href="https://www.linkedin.com/in/emilio-ponce-a319459/"
+              style={{
+                borderBottom: 'none',
+                boxShadow: 'none',
+                backgroundColor: 'white'
+              }}
+            >
+              <Icon
+                type="linkedin"
+                theme="filled"
+                style={{
+                  fontSize: '48px',
+                  color: '#0077B5'
+                }}
+              />
+              <div>Linkedin</div>
+            </a>
+          </span>
+
+          <span
+            style={{
+              display: 'inline',
+              float: 'left',
+              margin: '0px 30px',
+              textAlign: 'center'
+            }}
+          >
+            <a
+              href="https://www.youtube.com/user/ValenceBandSongs"
+              style={{
+                borderBottom: 'none',
+                boxShadow: 'none',
+                backgroundColor: 'white'
+              }}
+            >
+              <Icon
+                type="youtube"
+                theme="filled"
+                style={{
+                  fontSize: '48px',
+                  color: '#FF0000'
+                }}
+              />
+              <div>Youtube</div>
+            </a>
+          </span>
+        </div>
       </div>
     </div>
   </Layout>

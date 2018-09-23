@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Header from '../components/header'
-import favicon from '../images/favicon.png'
+import favicon from '../images/favicon.ico'
 import { StaticQuery, graphql } from 'gatsby'
 
 import './layout.module.css'

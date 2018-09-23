@@ -13,9 +13,6 @@ export default ({ data }) => {
           padding: '0 10px 0 10px'
         }}
       >
-        <div style={{ paddingBottom: '20px' }}>
-          <Link to={`/sobre-mi/`}>Sobre mí</Link>
-        </div>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div
             key={node.id}
@@ -47,11 +44,10 @@ export default ({ data }) => {
 
               <Icon
                 type="eye"
-                theme="twoTone"
-                twoToneColor="#29BB9C"
                 style={{
-                  fontSize: '20px',
-                  marginLeft: '15px'
+                  fontSize: '15px',
+                  marginLeft: '15px',
+                  color: '#9c9c9c'
                 }}
               />
               <span
