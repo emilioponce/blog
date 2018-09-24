@@ -28,7 +28,7 @@ export default ({ data }) => {
             theme="twoTone"
             twoToneColor="#29BB9C"
             style={{
-              fontSize: '20px',
+              fontSize: '18px',
               marginLeft: '15px'
             }}
           />
@@ -43,7 +43,7 @@ export default ({ data }) => {
           </span>
         </div>
 
-        <div style={{ padding: '10px 0 10px 0' }}>
+        <div style={{ padding: '10px 0 30px 0' }}>
           <Img fluid={data.postImage.childImageSharp.fluid} />
         </div>
         <div dangerouslySetInnerHTML={{ __html: data.postData.html }} />

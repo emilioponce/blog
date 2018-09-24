@@ -19,7 +19,6 @@ export default ({ data }) => (
       >
         <Img
           resolutions={data.file.childImageSharp.resolutions}
-          style={{ borderRadius: '10%' }}
           title="Dime usted"
         />
       </div>
@@ -38,7 +37,7 @@ export default ({ data }) => (
             style={{
               display: 'inline',
               float: 'left',
-              margin: '0px 30px',
+              margin: '0px 20px',
               textAlign: 'center'
             }}
           >
@@ -65,7 +64,7 @@ export default ({ data }) => (
             style={{
               display: 'inline',
               float: 'left',
-              margin: '0px 30px',
+              margin: '0px 20px',
               textAlign: 'center'
             }}
           >
@@ -91,7 +90,7 @@ export default ({ data }) => (
             style={{
               display: 'inline',
               float: 'left',
-              margin: '0px 30px',
+              margin: '0px 20px',
 
               textAlign: 'center'
             }}
@@ -120,7 +119,7 @@ export default ({ data }) => (
             style={{
               display: 'inline',
               float: 'left',
-              margin: '0px 30px',
+              margin: '0px 20px',
               textAlign: 'center'
             }}
           >
