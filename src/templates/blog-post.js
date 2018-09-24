@@ -29,7 +29,7 @@ export default ({ data }) => {
             twoToneColor="#29BB9C"
             style={{
               fontSize: '18px',
-              marginLeft: '15px'
+              marginLeft: '10px'
             }}
           />
           <span
@@ -64,7 +64,7 @@ export default ({ data }) => {
               <Icon
                 type="twitter"
                 style={{
-                  marginLeft: '15px',
+                  marginLeft: '10px',
                   fontSize: '20px',
                   color: '#2CAAE1'
                 }}
