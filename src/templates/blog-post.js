@@ -46,27 +46,30 @@ export default ({ data }) => {
               color: '#9c9c9c'
             }}
           >
-          <a 
-          href={"https://twitter.com/intent/tweet?text="
-          + "Blog de Emilio Ponce - "
-          +  data.postData.frontmatter.title
-          + " "
-          + window.location.host+data.postData.fields.slug
-          }
-          style={{
-            borderBottom:'none', 
-            boxShadow: 'none',
-            backgroundColor: 'white'
-            }}>
-            <Icon
+            <a
+              href={
+                'https://twitter.com/intent/tweet?text=' +
+                'Blog de Emilio Ponce - ' +
+                data.postData.frontmatter.title +
+                ' ' +
+                'https://emilioponce.info' +
+                data.postData.fields.slug
+              }
+              style={{
+                borderBottom: 'none',
+                boxShadow: 'none',
+                backgroundColor: 'white'
+              }}
+            >
+              <Icon
                 type="twitter"
                 style={{
                   marginLeft: '15px',
                   fontSize: '20px',
-                  color: '#2CAAE1',
+                  color: '#2CAAE1'
                 }}
               />
-              </a>
+            </a>
           </span>
         </div>
 
@@ -88,7 +91,7 @@ export const query = graphql`
         date(formatString: "DD MMMM YYYY", locale: "es")
       }
       fields {
-            slug
+        slug
       }
       timeToRead
     }
