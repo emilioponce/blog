@@ -41,6 +41,33 @@ export default ({ data }) => {
             {data.postData.timeToRead}{' '}
             {data.postData.timeToRead <= 1 ? 'minuto' : 'minutos'}
           </span>
+          <span
+            style={{
+              color: '#9c9c9c'
+            }}
+          >
+          <a 
+          href={"https://twitter.com/intent/tweet?text="
+          + "Blog de Emilio Ponce - "
+          +  data.postData.frontmatter.title
+          + " "
+          + window.location.host+data.postData.fields.slug
+          }
+          style={{
+            borderBottom:'none', 
+            boxShadow: 'none',
+            backgroundColor: 'white'
+            }}>
+            <Icon
+                type="twitter"
+                style={{
+                  marginLeft: '15px',
+                  fontSize: '20px',
+                  color: '#2CAAE1',
+                }}
+              />
+              </a>
+          </span>
         </div>
 
         <div style={{ padding: '10px 0 30px 0' }}>
@@ -59,6 +86,9 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "DD MMMM YYYY", locale: "es")
+      }
+      fields {
+            slug
       }
       timeToRead
     }
