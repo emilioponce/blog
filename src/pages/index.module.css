@@ -2,7 +2,7 @@
   padding: 5px 5px 20px 5px;
 }
 .postContainer {
-  padding: 5px 5px 20px 5px;
+  padding: 5px 5px 5px 5px;
 }
 
 .postContainer:hover {
@@ -10,32 +10,20 @@
 }
 
 .postContainer > a {
-  border-bottom: none;
-  box-shadow: none;
   font-weight: normal;
+}
+
+.metaInfo {
   background-color: transparent;
 }
 
-.postContainer > a:hover {
-  background-color: transparent;
-}
-
-.date {
+.date,
+.timeToRead,
+.icon {
   font-size: 80%;
   color: #9c9c9c;
 }
 
 .icon {
-  font-size: 15px;
   margin-left: 15px;
-  color: #9c9c9c;
-}
-
-.timeToRead {
-  font-size: 80%;
-  color: #9c9c9c;
-}
-
-.excerpt {
-  margin-bottom: 0px;
 }
