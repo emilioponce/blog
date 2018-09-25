@@ -16,6 +16,10 @@
   background-color: transparent;
 }
 
+.postContainer > a:hover {
+  background-color: transparent;
+}
+
 .date {
   font-size: 80%;
   color: #9c9c9c;
