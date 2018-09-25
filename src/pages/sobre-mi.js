@@ -8,7 +8,11 @@ import { Icon } from 'antd'
 export default ({ data }) => (
   <Layout>
     <div
-      style={{ margin: '3rem auto', maxWidth: 1024, padding: '0 10px 0 10px' }}
+      style={{
+        margin: '2rem auto',
+        maxWidth: 1024,
+        padding: '0 10px 0 10px'
+      }}
     >
       <Helmet title="Blog | Sobre mí" />
       <h1>Sobre mí</h1>
