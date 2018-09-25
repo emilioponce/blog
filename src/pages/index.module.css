@@ -1,0 +1,37 @@
+.mainLinksContainer {
+  padding: 5px 5px 20px 5px;
+}
+.postContainer {
+  padding: 5px 5px 20px 5px;
+}
+
+.postContainer:hover {
+  background-color: rgb(245, 250, 249);
+}
+
+.postContainer > a {
+  border-bottom: none;
+  box-shadow: none;
+  background-color: transparent;
+  font-weight: normal;
+}
+
+.date {
+  font-size: 80%;
+  color: #9c9c9c;
+}
+
+.icon {
+  font-size: 15px;
+  margin-left: 15px;
+  color: #9c9c9c;
+}
+
+.timeToRead {
+  font-size: 80%;
+  color: #9c9c9c;
+}
+
+.excerpt {
+  margin-bottom: 0px;
+}

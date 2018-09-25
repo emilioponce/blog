@@ -3,66 +3,32 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
 import { Icon } from 'antd'
 
+import styles from './index.module.css'
+
 export default ({ data }) => {
   return (
     <Layout>
       <div
         style={{
-          margin: '2rem auto',
+          margin: '3rem auto',
           maxWidth: 1024,
           padding: '0 10px 0 10px'
         }}
       >
-        <div style={{ paddingBottom: '20px' }}>
+        <div className={styles.mainLinksContainer}>
           <Link to={`/sobre-mi/`}>Sobre mí</Link>
         </div>
         {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div
-            key={node.id}
-            style={{
-              marginBottom: '20px',
-              backgroundColor: 'rgb(252, 252, 252)',
-              borderRadius: '8%'
-            }}
-          >
-            <Link
-              to={node.fields.slug}
-              style={{
-                borderBottom: 'none',
-                boxShadow: 'none',
-                backgroundColor: 'rgb(252, 252, 252)',
-                fontWeight: 'normal'
-              }}
-            >
+          <div className={styles.postContainer} key={node.id}>
+            <Link to={node.fields.slug}>
               <h2>{node.frontmatter.title}</h2>
-
-              <span
-                style={{
-                  fontSize: '80%',
-                  color: '#9c9c9c'
-                }}
-              >
-                {node.frontmatter.date}
-              </span>
-
-              <Icon
-                type="eye"
-                style={{
-                  fontSize: '15px',
-                  marginLeft: '15px',
-                  color: '#9c9c9c'
-                }}
-              />
-              <span
-                style={{
-                  fontSize: '80%',
-                  color: '#9c9c9c'
-                }}
-              >
+              <span className={styles.date}>{node.frontmatter.date}</span>
+              <Icon type="eye" className={styles.icon} />
+              <span className={styles.timeToRead}>
                 {' '}
                 {node.timeToRead} {node.timeToRead <= 1 ? 'minuto' : 'minutos'}
               </span>
-              <p style={{ marginBottom: '0px' }}>{node.excerpt}</p>
+              <p className={styles.excerpt}>{node.excerpt}</p>
             </Link>
           </div>
         ))}

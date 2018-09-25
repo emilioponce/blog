@@ -9,7 +9,7 @@ export default ({ data }) => (
   <Layout>
     <div
       style={{
-        margin: '2rem auto',
+        margin: '3rem auto',
         maxWidth: 1024,
         padding: '0 10px 0 10px'
       }}
