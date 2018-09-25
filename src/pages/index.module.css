@@ -12,8 +12,8 @@
 .postContainer > a {
   border-bottom: none;
   box-shadow: none;
-  background-color: transparent;
   font-weight: normal;
+  background-color: transparent;
 }
 
 .date {
