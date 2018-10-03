@@ -27,6 +27,7 @@
 .text {
   color: white;
   transition: color 0.2s ease;
+  font-weight: bold;
 }
 
 .text:hover {
