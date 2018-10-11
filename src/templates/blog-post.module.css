@@ -1,11 +1,11 @@
 .caption {
   color: #9c9c9c;
+  font-size: 16px;
 }
 
 .icon,
 .iconTwitter {
-  font-size: 18px;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 .iconTwitter {
@@ -20,5 +20,5 @@
 }
 
 .postImage {
-  padding: 15px 0 40px 0;
+  padding: 10px 0 30px 0;
 }
