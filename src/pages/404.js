@@ -3,20 +3,19 @@ import Img from 'gatsby-image'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import { graphql } from 'gatsby'
+import { Icon } from 'antd'
 import Layout from '../components/layout'
+
+import styles from './404.module.css'
 
 export default ({ data }) => (
   <Layout>
-    <div
-      style={{
-        margin: '3rem auto',
-        maxWidth: 1024,
-        padding: '0 10px 0 10px'
-      }}
-    >
+    <div>
       <Helmet title="Página no encontrada" />
       <h1>404 Página no encontrada</h1>
-      <Img fluid={data.file.childImageSharp.fluid} />
+      <div className={styles.mainImage}>
+        <Img fluid={data.file.childImageSharp.fluid} />
+      </div>
       <h2>
         Esta ruta no existe, por favor comprueba que has escrito correctamente
         la URL.
@@ -24,7 +23,8 @@ export default ({ data }) => (
       <p>
         Si el plan magistral anteriormente descrito no funciona, puedes volver a
         la <Link to={`/`}>página de inicio</Link> o contactar conmigo en{' '}
-        <a href="http://www.twitter.com/soycore">Twitter</a>.
+        <Icon type="twitter" className={styles.iconTwitter} />
+        <a href="http://www.twitter.com/soycore">Twitter</a>
       </p>
     </div>
   </Layout>

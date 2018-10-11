@@ -5,79 +5,39 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import { Icon } from 'antd'
 
+import styles from './blog-post.module.css'
+
 export default ({ data }) => {
+  let shareTwitterUrl = `https://twitter.com/intent/tweet?text=Blog de Emilio Ponce - ${
+    data.postData.frontmatter.title
+  } https://emilioponce.info${data.postData.fields.slug}`
+
   return (
     <Layout>
-      <div
-        style={{
-          margin: '3rem auto',
-          maxWidth: 1024,
-          padding: '0 10px 0 10px'
-        }}
-      >
-        <Helmet title={'Blog | '.concat(data.postData.frontmatter.title)} />
-        <h1>{data.postData.frontmatter.title} </h1>
-        <div
-          style={{
-            color: '#9c9c9c'
-          }}
+      <Helmet title={'Blog | '.concat(data.postData.frontmatter.title)} />
+      <h1>{data.postData.frontmatter.title} </h1>
+      <div className={styles.caption}>
+        {data.postData.frontmatter.date}
+        <Icon
+          type="eye"
+          theme="twoTone"
+          twoToneColor="#29BB9C"
+          className={styles.icon}
+        />{' '}
+        {data.postData.timeToRead}{' '}
+        {data.postData.timeToRead <= 1 ? 'minuto' : 'minutos'}
+        <a
+          href={shareTwitterUrl}
+          title="Comparte en twitter!"
+          className={styles.a}
         >
-          {data.postData.frontmatter.date}
-          <Icon
-            type="eye"
-            theme="twoTone"
-            twoToneColor="#29BB9C"
-            style={{
-              fontSize: '18px',
-              marginLeft: '10px'
-            }}
-          />
-          <span
-            style={{
-              color: '#9c9c9c'
-            }}
-          >
-            {' '}
-            {data.postData.timeToRead}{' '}
-            {data.postData.timeToRead <= 1 ? 'minuto' : 'minutos'}
-          </span>
-          <span
-            style={{
-              color: '#9c9c9c'
-            }}
-          >
-            <a
-              href={
-                'https://twitter.com/intent/tweet?text=' +
-                'Blog de Emilio Ponce - ' +
-                data.postData.frontmatter.title +
-                ' ' +
-                'https://emilioponce.info' +
-                data.postData.fields.slug
-              }
-              style={{
-                borderBottom: 'none',
-                boxShadow: 'none',
-                backgroundColor: 'white'
-              }}
-            >
-              <Icon
-                type="twitter"
-                style={{
-                  marginLeft: '10px',
-                  fontSize: '20px',
-                  color: '#2CAAE1'
-                }}
-              />
-            </a>
-          </span>
-        </div>
-
-        <div style={{ padding: '10px 0 30px 0' }}>
-          <Img fluid={data.postImage.childImageSharp.fluid} />
-        </div>
-        <div dangerouslySetInnerHTML={{ __html: data.postData.html }} />
+          <Icon type="twitter" className={styles.iconTwitter} />
+        </a>
       </div>
+      <div className={styles.postImage}>
+        <Img fluid={data.postImage.childImageSharp.fluid} />
+      </div>
+      <div dangerouslySetInnerHTML={{ __html: data.postData.html }} />
     </Layout>
   )
 }

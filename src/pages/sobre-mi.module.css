@@ -1,0 +1,32 @@
+.profileImage {
+  padding: 20px 0 10px 0;
+}
+
+.icon {
+  display: inline;
+  margin: 25px;
+  font-size: 36px;
+}
+
+.iconTwitter {
+  color: #2caae1;
+}
+
+.iconGithub {
+  color: #171715;
+}
+
+.iconLinkedin {
+  color: #0077b5;
+}
+
+.iconYoutube {
+  color: #ff0000;
+}
+
+.a,
+.a:hover {
+  border-bottom: none;
+  box-shadow: none;
+  background-color: white;
+}

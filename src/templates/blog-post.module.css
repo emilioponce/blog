@@ -1,0 +1,24 @@
+.caption {
+  color: #9c9c9c;
+}
+
+.icon,
+.iconTwitter {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.iconTwitter {
+  color: #2caae1;
+}
+
+.a,
+.a:hover {
+  border-bottom: none;
+  box-shadow: none;
+  background-color: white;
+}
+
+.postImage {
+  padding: 15px 0 40px 0;
+}

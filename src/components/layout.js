@@ -4,7 +4,7 @@ import Header from '../components/header'
 import favicon from '../images/favicon.ico'
 import { StaticQuery, graphql } from 'gatsby'
 
-import './layout.module.css'
+import './layout.css'
 
 export default ({ children }) => (
   <StaticQuery
@@ -44,7 +44,7 @@ export default ({ children }) => (
           siteTitle={data.site.siteMetadata.title}
           avatarUrl={data.file.childImageSharp.resolutions.src}
         />
-        {children}
+        <div className="content">{children}</div>
       </>
     )}
   />

@@ -8,34 +8,25 @@ import styles from './index.module.css'
 export default ({ data }) => {
   return (
     <Layout>
-      <div
-        style={{
-          margin: '3rem auto',
-          maxWidth: 1024,
-          padding: '0 10px 0 10px'
-        }}
-      >
-        <div className={styles.mainLinksContainer}>
-          <Link to={`/sobre-mi/`}>Sobre mí</Link>
-        </div>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div className={styles.postContainer} key={node.id}>
-            <Link to={node.fields.slug}>
-              <h2>{node.frontmatter.title}</h2>
-              <div className={styles.metaInfo}>
-                <span className={styles.date}>{node.frontmatter.date}</span>
-                <Icon type="eye" className={styles.icon} />
-                <span className={styles.timeToRead}>
-                  {' '}
-                  {node.timeToRead}{' '}
-                  {node.timeToRead <= 1 ? 'minuto' : 'minutos'}
-                </span>
-              </div>
-              <p className={styles.excerpt}>{node.excerpt}</p>
-            </Link>
-          </div>
-        ))}
+      <div className={styles.mainLinksContainer}>
+        <Link to={`/sobre-mi/`}>Sobre mí</Link>
       </div>
+      {data.allMarkdownRemark.edges.map(({ node }) => (
+        <div className={styles.postContainer} key={node.id}>
+          <Link to={node.fields.slug}>
+            <h2>{node.frontmatter.title}</h2>
+            <div className={styles.metaInfo}>
+              <span className={styles.date}>{node.frontmatter.date}</span>
+              <Icon type="eye" className={styles.icon} />
+              <span className={styles.timeToRead}>
+                {' '}
+                {node.timeToRead} {node.timeToRead <= 1 ? 'minuto' : 'minutos'}
+              </span>
+            </div>
+            <p className={styles.excerpt}>{node.excerpt}</p>
+          </Link>
+        </div>
+      ))}
     </Layout>
   )
 }
