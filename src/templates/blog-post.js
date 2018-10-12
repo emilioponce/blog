@@ -34,8 +34,11 @@ export default ({ data }) => {
           <Icon type="twitter" className={styles.iconTwitter} />
         </a>
       </div>
-      <div className={styles.postImage}>
+      <div className={styles.mainImage}>
         <Img fluid={data.postImage.childImageSharp.fluid} />
+        <div className={styles.mainImageCredits}>
+          {data.postData.frontmatter.imageCredits}
+        </div>
       </div>
       <div dangerouslySetInnerHTML={{ __html: data.postData.html }} />
     </Layout>
@@ -49,6 +52,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "DD MMMM YYYY", locale: "es")
+        imageCredits
       }
       fields {
         slug

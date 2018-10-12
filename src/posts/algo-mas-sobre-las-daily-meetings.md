@@ -1,7 +1,7 @@
 ---
-title: "Algo más sobre las Daily Meetings"
-date: "2018-07-31"
-tags: ["agile", "SCRUM"]
+title: 'Algo más sobre las Daily Meetings'
+date: '2018-07-31'
+imageCredits: 'Foto tomada por rawpixel y publicada en Unsplash'
 ---
 
 _Para ponerte en antecedentes consulta el artículo previo: [Las Daily Meetings](/las-daily-meetings/)._

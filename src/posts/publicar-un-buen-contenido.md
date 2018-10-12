@@ -1,7 +1,7 @@
 ---
-title: "Publicar un buen contenido"
-date: "2018-07-19"
-tags: ["reflexiones"]
+title: 'Publicar un buen contenido'
+date: '2018-07-19'
+imageCredits: 'Foto tomada por Samuel Zeller y publicada en Unsplash'
 ---
 
 Veamos, qué hace falta para publicar un buen contenido?

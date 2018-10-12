@@ -10,6 +10,7 @@
 
 .iconTwitter {
   color: #2caae1;
+  font-size: 24px;
 }
 
 .a,
@@ -19,6 +20,15 @@
   background-color: white;
 }
 
-.postImage {
-  padding: 10px 0 30px 0;
+.mainImage {
+  margin: 10px 0 20px 0;
+  border: 1px solid rgb(245, 250, 249);
+  background-color: white;
+}
+
+.mainImageCredits {
+  font-size: 80%;
+  line-height: 130%;
+  color: #9c9c9c;
+  margin: 5px 2px 5px 2px;
 }

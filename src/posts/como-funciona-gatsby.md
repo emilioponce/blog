@@ -1,7 +1,7 @@
 ---
 title: 'Cómo funciona Gatsby?'
 date: '2018-09-07'
-tags: ['jamstack', 'gatsby', 'react', 'graphql', 'webpack', 'netlify', 'CI']
+imageCredits: 'Gatsby, a blazing fast modern site generator for React.'
 ---
 
 Ayer hice una pregunta en twitter. Sí sí, así fue. Concretamente quería saber si os resultaba interesante conocer como está montado este blog. Pues bien, parece ser que así es, por lo que.. qué tal si os describo su stack tecnológico?

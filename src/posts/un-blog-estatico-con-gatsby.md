@@ -1,7 +1,7 @@
 ---
-title: "Un blog estático con Gatsby"
-date: "2018-07-12"
-tags: ["gatsby"]
+title: 'Un blog estático con Gatsby'
+date: '2018-07-12'
+imageCredits: 'Foto tomada por Clément H y publicada en Unsplash'
 ---
 
 Aquí va un primer texto con el que validar que, efectivamente, ya puedo comenzar.

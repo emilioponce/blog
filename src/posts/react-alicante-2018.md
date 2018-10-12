@@ -1,7 +1,7 @@
 ---
 title: 'React Alicante 2018'
 date: '2018-09-24'
-tags: ['conferencias', 'react', 'redux']
+imageCredits: 'Landing page de la web de la conferencia: reactalicante.es'
 ---
 
 Me acabo de reunir con todos los redactores de este medio de masas en el que escribo y por fin hemos consensuado el titular. He aquí la mejor manera que he encontrado de resumir mi experiencia en la conferencia [REACT ALICANTE 2018](http://reactalicante.es/):

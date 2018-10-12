@@ -1,7 +1,7 @@
 ---
 title: 'Las Daily Meetings'
 date: '2018-07-30'
-tags: ['agile', 'SCRUM']
+imageCredits: 'Foto tomada por Margarida CSilva y publicada en Unsplash'
 ---
 
 _Me apetece comentar bastantes cosas sobre como enfocamos en mi empresa las Daily Meetings así que he decidido hacerlo en dos textos consecutivos, por si alguno tiene la tentación de esperarse al DVD._

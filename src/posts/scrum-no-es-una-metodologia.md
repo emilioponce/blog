@@ -1,7 +1,7 @@
 ---
-title: "SCRUM no es una metodología"
-date: "2018-07-25"
-tags: ["agile", "SCRUM", "reflexiones"]
+title: 'SCRUM no es una metodología'
+date: '2018-07-25'
+imageCredits: 'Foto tomada por Todd Quackenbush y publicada en Unsplash'
 ---
 
 Con este artículo abro una serie en la que comentaré algunos aspectos concretos sobre mi experiencia aplicando SCRUM.
