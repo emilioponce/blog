@@ -7,13 +7,12 @@ import styles from './header.module.css'
 
 const Header = ({ siteTitle, avatarUrl }) => (
   <div className={styles.fullHeader}>
-    <div className={styles.wrapper}>
+    <div className={styles.widthWrapper}>
       <div className={styles.mask} />
-      <div className={styles.maskTwo} />
-      <Avatar size={50} className={styles.avatar} src={avatarUrl} />
-      <Link to="/" className={styles.text}>
-        <span className={styles.title}>
-          {siteTitle}
+      <Link to="/" className={styles.a}>
+        <Avatar size={50} className={styles.avatar} src={avatarUrl} />
+        <span className={styles.titleWrapper}>
+          <div className={styles.title}>{siteTitle}</div>
           <div className={styles.subtitle}>Desarrollo web</div>
         </span>
       </Link>

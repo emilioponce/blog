@@ -3,7 +3,7 @@
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
 }
 
-.wrapper {
+.widthWrapper {
   margin: 0 auto;
   max-width: 1024px;
   height: 80px;
@@ -11,14 +11,20 @@
 
 .mask {
   margin-left: 15px;
-  max-width: 1024;
   background-color: rgb(47, 204, 170);
-  width: 258px;
+  width: 264px;
   height: 80px;
   -moz-transform: skewX(-10deg);
   -o-transform: skewX(-10deg);
   transform: skewX(-10deg);
   position: absolute;
+}
+
+.a,
+.a:hover {
+  border-bottom: none;
+  box-shadow: none;
+  background-color: transparent;
 }
 
 .avatar {
@@ -29,31 +35,27 @@
   margin-top: 15px;
 }
 
-.text {
-  color: white;
-  transition: color 0.2s ease;
+.titleWrapper {
   font-family: 'Montserrat', sans-serif;
-}
-
-.text:hover {
+  position: absolute;
+  text-transform: uppercase;
   color: white;
+  font-weight: 400;
 }
 
 .title {
-  font-size: 24px;
-  position: absolute;
+  font-size: 140%;
   margin-top: 14px;
-  text-transform: uppercase;
-  font-weight: bold;
 }
 
 .subtitle {
-  font-size: 15px;
+  font-size: 85%;
   margin-left: 2px;
 }
 
 /* effect-shine */
-.title:hover {
+
+.titleWrapper:hover {
   mask-image: linear-gradient(
     -75deg,
     rgba(0, 0, 0, 0.7) 50%,
