@@ -36,7 +36,6 @@
 }
 
 .titleWrapper {
-  font-family: 'Montserrat', sans-serif;
   position: absolute;
   text-transform: uppercase;
   color: white;
@@ -44,12 +43,12 @@
 }
 
 .title {
-  font-size: 140%;
+  font-size: 25px;
   margin-top: 14px;
 }
 
 .subtitle {
-  font-size: 85%;
+  font-size: 15px;
   margin-left: 2px;
 }
 

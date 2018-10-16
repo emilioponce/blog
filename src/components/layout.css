@@ -1,25 +1,39 @@
 body {
-  color: hsla(0, 0%, 0%, 1 0.8);
-  font-family: 'LatoWeb', 'Arial', sans-serif;
+  color: #414754;
+  font-family: 'Montserrat', sans-serif;
   font-size: 110%;
   line-height: 28px;
   margin: 0px;
 }
 
+@media (max-width: 640px) {
+  body {
+    font-size: 100%;
+  }
+}
+
 h1 {
-  line-height: 40px;
+  font-size: 165%;
+  line-height: 30px;
   font-weight: bold;
   margin-bottom: 2px;
 }
 
 h2 {
-  font-size: 125%;
+  font-size: 130%;
   margin-bottom: 2px;
   font-weight: bold;
 }
 
+h3 {
+  font-size: 110%;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #5f5f5f;
+}
+
 a {
-  color: inherit;
+  color: black;
   border-bottom: 1px solid #97dbd9;
   box-shadow: inset 0 -1px 0px 0px #97dbd9;
   font-weight: bold;
@@ -33,10 +47,6 @@ a:hover {
 
 strong {
   font-size: 102%;
-}
-
-em {
-  color: #757575;
 }
 
 ul {
@@ -58,6 +68,7 @@ blockquote {
   padding: 10px 10px;
   quotes: '\201C' '\201D' '\2018' '\2019';
 }
+
 blockquote:before {
   color: #2ba9a5;
   content: open-quote;
@@ -66,6 +77,7 @@ blockquote:before {
   margin-right: 0.25em;
   vertical-align: -0.2em;
 }
+
 blockquote p {
   display: inline;
 }

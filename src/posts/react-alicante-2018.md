@@ -39,6 +39,6 @@ Por primera vez parte de mi equipo y yo hemos asistido a un evento de estas dime
 
 Por cierto, si eres responsable de un equipo léete esto que te interesa:
 
-**Qué bueno es el Team-Building!**
+### Qué bueno es el Team-Building!
 
 No lo dudes, si quieres que tu equipo trabaje mejor dale importancia a este aspecto porque merece la pena. Creo ciegamente en que un equipo exitoso es un equipo relajado y motivado, y esto no se puede conseguir si únicamente cada miembro hace bien su parte del trabajo. Somos seres sociales trabajando coordinadamente, y para que nos mostremos relajados y positivos necesitamos que exista cierto grado de confianza en aquellos que nos rodean. Estoy seguro de que tras estos días compartiendo nuestro espacio profesional pero también personal salimos más unidos y fortalecidos como equipo. Una pena que sólo hayamos podido asistir la mitad del grupo. Ya pensaré algo.
