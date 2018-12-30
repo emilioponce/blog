@@ -20,8 +20,8 @@ export default ({ data }) => (
     <div>
       <p>
         Soy Ingeniero Informático y dedico gran parte de mi tiempo a desarrollar
-        aplicaciones web. También gestiono un equipo, e incluso de vez en cuando
-        comienzo un <i>Pet Project</i> y no lo acabo.
+        aplicaciones web. También tengo experiencia gestionando equipos, e
+        incluso de vez en cuando comienzo un <i>Pet Project</i> y no lo acabo.
       </p>
       <p>
         Siento curiosidad por el aspecto técnico y humano de las cosas. Sabrás
