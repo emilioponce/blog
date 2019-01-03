@@ -1,0 +1,26 @@
+.postContainer {
+  padding: 5px 5px 5px 5px;
+}
+
+.postContainer:hover {
+  background-color: rgb(245, 250, 249);
+}
+
+.postContainer > a {
+  font-weight: normal;
+}
+
+.metaInfo {
+  background-color: transparent;
+}
+
+.date,
+.timeToRead,
+.icon {
+  font-size: 80%;
+  color: #9c9c9c;
+}
+
+.icon {
+  margin-left: 15px;
+}

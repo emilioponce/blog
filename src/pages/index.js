@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
-import { Icon } from 'antd'
+import PostPreview from '../components/PostPreview'
 
 import styles from './index.module.css'
 
@@ -12,20 +12,14 @@ export default ({ data }) => {
         <Link to={`/sobre-mi/`}>Sobre mí</Link>
       </div>
       {data.allMarkdownRemark.edges.map(({ node }) => (
-        <div className={styles.postContainer} key={node.id}>
-          <Link to={node.fields.slug}>
-            <h2>{node.frontmatter.title}</h2>
-            <div className={styles.metaInfo}>
-              <span className={styles.date}>{node.frontmatter.date}</span>
-              <Icon type="eye" className={styles.icon} />
-              <span className={styles.timeToRead}>
-                {' '}
-                {node.timeToRead} {node.timeToRead <= 1 ? 'minuto' : 'minutos'}
-              </span>
-            </div>
-            <p className={styles.excerpt}>{node.excerpt}</p>
-          </Link>
-        </div>
+        <PostPreview
+          key={node.id}
+          link={node.fields.slug}
+          title={node.frontmatter.title}
+          date={node.frontmatter.date}
+          timeToRead={node.timeToRead}
+          excerpt={node.excerpt}
+        />
       ))}
     </Layout>
   )
