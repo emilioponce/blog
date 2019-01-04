@@ -1,5 +1,14 @@
-.profileImage {
-  padding: 20px 0 10px 0;
+.title {
+  font-family: medium-content-sans-serif-font, sans-serif;
+  color: black;
+  font-weight: bold;
+  font-size: 150%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.description {
+  padding-top: 25px;
 }
 
 .icon {

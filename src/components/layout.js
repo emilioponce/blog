@@ -15,19 +15,12 @@ export default ({ children }) => (
             title
           }
         }
-        file(relativePath: { regex: "/avatar_titulo/" }) {
-          childImageSharp {
-            resolutions(width: 250, height: 250) {
-              ...GatsbyImageSharpResolutions
-            }
-          }
-        }
       }
     `}
     render={data => (
       <>
         <Helmet
-          title={'Blog | '.concat(data.site.siteMetadata.title)}
+          title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: 'Blog de Emilio Ponce' },
             {
@@ -40,10 +33,7 @@ export default ({ children }) => (
             { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
           ]}
         />
-        <Header
-          siteTitle={data.site.siteMetadata.title}
-          avatarUrl={data.file.childImageSharp.resolutions.src}
-        />
+        <Header />
         <div className="content">{children}</div>
       </>
     )}

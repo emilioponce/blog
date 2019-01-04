@@ -1,32 +1,27 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Img from 'gatsby-image'
-import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import { Icon } from 'antd'
 
 import styles from './sobre-mi.module.css'
 
-export default ({ data }) => (
+export default () => (
   <Layout>
     <Helmet title="Blog | Sobre mí" />
-    <h1>Sobre mí</h1>
-    <div className={styles.profileImage}>
-      <Img
-        resolutions={data.file.childImageSharp.resolutions}
-        title="Dime usted"
-      />
-    </div>
-    <div>
+    <div className={styles.title}>Sobre mí</div>
+    <div className={styles.description}>
+      <p>Hola! Me llamo Emilio y soy Ingeniero Informático.</p>{' '}
       <p>
-        Soy Ingeniero Informático y dedico gran parte de mi tiempo a desarrollar
-        aplicaciones web. También tengo experiencia gestionando equipos, e
-        incluso de vez en cuando comienzo un <i>Pet Project</i> y no lo acabo.
+        Dedico gran parte de mi tiempo a desarrollar aplicaciones web, y también
+        tengo experiencia liderando equipos de hasta 7 desarrolladores. A veces,
+        cuando nadie me ve, comienzo un <i>Pet Project</i> y no lo acabo.
       </p>
       <p>
-        Siento curiosidad por el aspecto técnico y humano de las cosas. Sabrás
-        algo más sobre mí en:
+        Me gustan los procesos creativos, y siento curiosidad por el aspecto
+        técnico y humano de las cosas.
+        <br /> No dudes en decirme algo, estaré encantado de hablar contigo!
       </p>
+      <p>Sabrás más cosas sobre mí en:</p>
       <div>
         <span className={styles.icon}>
           <a
@@ -79,15 +74,3 @@ export default ({ data }) => (
     </div>
   </Layout>
 )
-
-export const query = graphql`
-  query {
-    file(relativePath: { regex: "/avatar.jpg/" }) {
-      childImageSharp {
-        resolutions(width: 250, height: 250) {
-          ...GatsbyImageSharpResolutions
-        }
-      }
-    }
-  }
-`

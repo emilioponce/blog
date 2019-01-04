@@ -2,10 +2,10 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { Icon } from 'antd'
 
-import styles from './PostPreview.module.css'
+import styles from './ArticlePreview.module.css'
 
-const PostPreview = ({ link, title, date, timeToRead, excerpt }) => (
-  <div className={styles.postContainer}>
+export default ({ link, title, date, timeToRead, excerpt }) => (
+  <div className={styles.articleContainer}>
     <Link to={link}>
       <h2>{title}</h2>
       <div className={styles.metaInfo}>
@@ -20,5 +20,3 @@ const PostPreview = ({ link, title, date, timeToRead, excerpt }) => (
     </Link>
   </div>
 )
-
-export default PostPreview

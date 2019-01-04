@@ -1,29 +1,16 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
 import Layout from '../components/layout'
-import PostPreview from '../components/PostPreview'
+import SobreMiPreview from '../components/SobreMiPreview'
+import ArticlesList from '../components/ArticlesList'
+import Footer from '../components/Footer'
 
-import styles from './index.module.css'
-
-export default ({ data }) => {
-  return (
-    <Layout>
-      <div className={styles.mainLinksContainer}>
-        <Link to={`/sobre-mi/`}>Sobre mí</Link>
-      </div>
-      {data.allMarkdownRemark.edges.map(({ node }) => (
-        <PostPreview
-          key={node.id}
-          link={node.fields.slug}
-          title={node.frontmatter.title}
-          date={node.frontmatter.date}
-          timeToRead={node.timeToRead}
-          excerpt={node.excerpt}
-        />
-      ))}
-    </Layout>
-  )
-}
+export default ({ data }) => (
+  <Layout>
+    <SobreMiPreview />
+    <ArticlesList data={data} />
+    <Footer />
+  </Layout>
+)
 
 export const query = graphql`
   query IndexQuery {

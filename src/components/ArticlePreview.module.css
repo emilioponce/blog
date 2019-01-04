@@ -1,12 +1,12 @@
-.postContainer {
+.articleContainer {
   padding: 5px 5px 5px 5px;
 }
 
-.postContainer:hover {
+.articleContainer:hover {
   background-color: rgb(245, 250, 249);
 }
 
-.postContainer > a {
+.articleContainer > a {
   font-weight: normal;
 }
 
