@@ -23,7 +23,7 @@ export default () => (
       </p>
       <p>Sabrás más cosas sobre mí en:</p>
       <div>
-        <span className={styles.icon}>
+        <span>
           <a
             href="https://twitter.com/soycore"
             className={styles.a}
@@ -32,8 +32,7 @@ export default () => (
             <Icon type="twitter" className={styles.iconTwitter} />
           </a>
         </span>
-
-        <span className={styles.icon}>
+        <span>
           <a
             href="https://github.com/emilioponce"
             className={styles.a}
@@ -42,8 +41,7 @@ export default () => (
             <Icon type="github" className={styles.iconGithub} />
           </a>
         </span>
-
-        <span className={styles.icon}>
+        <span>
           <a
             href="https://www.linkedin.com/in/emilio-ponce-a319459/"
             className={styles.a}
@@ -56,8 +54,7 @@ export default () => (
             />
           </a>
         </span>
-
-        <span className={styles.icon}>
+        <span>
           <a
             href="https://www.youtube.com/user/ValenceBandSongs"
             className={styles.a}

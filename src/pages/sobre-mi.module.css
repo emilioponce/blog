@@ -1,6 +1,6 @@
 .title {
   font-family: medium-content-sans-serif-font, sans-serif;
-  color: black;
+  color: #21242b;
   font-weight: bold;
   font-size: 150%;
   padding-bottom: 15px;
@@ -12,24 +12,31 @@
 }
 
 .icon {
-  display: inline;
-  margin: 25px;
+  padding: 0 15px 0 15px;
   font-size: 36px;
 }
 
+.icon:hover {
+  color: #29bb9c;
+}
+
 .iconTwitter {
+  composes: icon;
   color: #2caae1;
 }
 
 .iconGithub {
+  composes: icon;
   color: #171715;
 }
 
 .iconLinkedin {
+  composes: icon;
   color: #0077b5;
 }
 
 .iconYoutube {
+  composes: icon;
   color: #ff0000;
 }
 

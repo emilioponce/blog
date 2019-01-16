@@ -34,7 +34,7 @@ export const query = graphql`
   query {
     file(relativePath: { regex: "/404/" }) {
       childImageSharp {
-        fluid(maxWidth: 1024) {
+        fluid(maxWidth: 1140) {
           ...GatsbyImageSharpFluid_noBase64
         }
       }

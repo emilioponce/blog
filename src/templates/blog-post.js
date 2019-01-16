@@ -61,7 +61,7 @@ export const query = graphql`
     }
     postImage: file(relativePath: { eq: $mainImage }) {
       childImageSharp {
-        fluid(maxWidth: 1024) {
+        fluid(maxWidth: 1140) {
           ...GatsbyImageSharpFluid_noBase64
         }
       }

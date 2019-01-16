@@ -1,25 +1,45 @@
 .wrapper {
   display: grid;
-  height: auto;
-  grid-auto-flow: row;
-  grid-auto-rows: minmax(20px, auto);
-  grid-template-columns: 153px 1fr;
-  margin-top: 60px;
-  margin-bottom: 40px;
+  grid-template-columns: 142px 1fr;
   color: rgb(121, 121, 121);
   line-height: 1.5;
-  gap: 8px 8px;
+  margin-bottom: 30px;
+  /* this align avatar an text on the center of the parent */
+  align-items: center;
 }
 
 .name {
   font-family: medium-content-sans-serif-font, sans-serif;
-  color: black;
+  color: #21242b;
   font-weight: bold;
   font-size: 170%;
   padding-bottom: 10px;
 }
 
+.avatar {
+  border-width: 4px;
+  border-style: solid;
+  border-color: rgb(236, 240, 241);
+}
+
 .description {
   font-size: 85%;
-  max-width: 500px;
+  max-width: 550px;
+}
+
+.icon {
+  margin: 0 4px 0 4px;
+  font-size: 22px;
+  color: #414754;
+}
+
+.icon:hover {
+  color: #29bb9c;
+}
+
+.a,
+.a:hover {
+  border-bottom: none;
+  box-shadow: none;
+  background-color: white;
 }
