@@ -1,20 +1,41 @@
-.fullHeader {
+.header {
   background: #29bb9c;
   box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.1);
+  height: 60px;
+  line-height: 60px; /* same as height to vertically center */
+}
+
+.stickyHeader {
+  background: #29bb9c;
+  box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  height: 40px;
+  line-height: 40px; /* same as height to vertically center */
+  width: 100%;
+  z-index: 1;
 }
 
 .widthWrapper {
   margin: 0 auto;
   max-width: 1140px;
-  height: 60px;
-  text-align: right;
+  /* using flexbox to align two divs one in left and one in right. Div on the left is not visible (but 
+  there), when non sticky header is rendered */
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  /* el título solo es visible si sticky está activo */
+  font-family: medium-content-sans-serif-font, sans-serif;
+  font-size: 120%;
+  font-weight: bold;
+  color: white;
+  margin: 0 10px 0 10px;
 }
 
 .menu {
-  display: inline-block;
   font-size: 90%;
-  height: 60px;
-  padding: 15px 0;
 }
 
 .a {

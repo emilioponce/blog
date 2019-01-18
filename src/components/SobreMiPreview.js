@@ -11,8 +11,10 @@ export default () => (
       <div className={styles.description}>
         <p>
           Soy Ingeniero Informático, me dedico al desarrollo web y tengo
-          experiencia gestionando equipos. Senior Frontend Developer @{' '}
-          <a href="https://www.zinio.com/">Zinio</a>.
+          experiencia gestionando equipos.
+          <br />
+          Senior Frontend Developer @ <a href="https://www.zinio.com/">Zinio</a>
+          .
         </p>
         <a href="https://twitter.com/soycore" className={styles.a}>
           <Icon type="twitter" className={styles.icon} />

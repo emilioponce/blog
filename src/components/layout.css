@@ -88,6 +88,15 @@ blockquote p {
   padding: 0 10px 0 10px;
 }
 
+/*
+This removes the gap that causes sudden quick movement when sticky header is present,
+as it gets a new position in the top of the page.
+Sticky Header is defined in Header.module.css
+*/
+div[class*='stickyHeader'] + .content {
+  padding-top: 60px;
+}
+
 /**
 * A continuación clases relacionadas con highlighting de líneas de codigo con Prismjs
 **/
