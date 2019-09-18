@@ -13,8 +13,8 @@ export default () => (
           Soy Ingeniero Informático, me dedico al desarrollo web y tengo
           experiencia gestionando equipos.
           <br />
-          Senior Frontend Developer @ <a href="https://www.zinio.com/">Zinio</a>
-          .
+          Senior Frontend Developer @
+          <a href="https://www.redpoints.com/">Red Points</a>.
         </p>
         <a href="https://twitter.com/soycore" className={styles.a}>
           <Icon type="twitter" className={styles.icon} />
